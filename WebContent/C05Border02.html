@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 공통속성 */
+        div div{
+            width:200px; height:200px;
+        }
+        
+        .radius{
+            border:5px solid red; background-color:blue;
+            text-align:center; line-height:200px; color:yellow;
+
+            /* 
+            Box모델의 ㅁ소러리르 두으레 ㄴ든다.
+            속성값의 순서는 조사ㅏㅇ 우상, 우하, 좌하 즉 시계방향으로 지정한다.
+            전체크기의 50%를 깎아내면 원을 ㅁ나들 수 이싸다.  */
+            border-radius:100px 100px   100px 100px;
+        }
+
+        #shadow{
+            margin-top:50px; margin-bottom:50px;
+            background-color:Red;
+            /* 그림자 효과를 설정한다.
+            속성값이 순서는 좌측여백, 상단여백, 이측여백,, ㅎ름도, 색깔
+            리유 */
+            box-shadow:20px 30px 50px #6d0202;
+        }
+    </style>
+</head>
+<body>
+    <h2>둥근테두리 및 그림자 표현하기</h2>
+    <div>
+        <div class="radius">꼭지점 둥글게~~</div>
+        <div id="shadow">그림자효과 주기</div>
+    </div>
+</body>
+</html>

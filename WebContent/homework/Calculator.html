@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator.html</title>
+
+    <style>
+        #table{
+            margin:0; padding:0;
+            text-align:center;
+            background-color:silver;
+            border:1px solid silver;
+            width:300px;
+            height:400px;
+            color:white;
+            font-size: 15pt;
+            border-radius:10px 10px 10px 10px;
+        }
+        td{
+            width:25%;
+            border:3px solid silver;
+            border-radius:10px 10px 10px 10px;
+        }
+          
+        .number td{
+            background-color: rgb(46, 46, 46);
+        }
+        #operator , #operator button{
+            border:1px solid orange;
+            background-color:orange;
+        }
+        .top td{
+            background-color:#70C738;
+            text-align: right;
+            padding-right: 15px;
+        }
+        .top td button{
+            text-decoration:none; color:black;
+            font-size:30pt;
+        }
+        .gray td{
+            background-color:gray;
+        }
+
+        .gray td:active, .number td:active {
+            background-color: #232421b7;
+        }
+        #operator:active {
+            background-color: rgb(190, 146, 63);
+        }
+
+        td button{
+            background-color:transparent;
+            border:0px;
+            color:white;
+            font-size: 15pt;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>계산기 calculator.html</h2>
+
+    <table id="table" >
+        <tr class="top" id="">
+            <td colspan="4" ><button>123+654</button></td>
+        </tr>
+        <tr class="gray">
+            <td colspan="2" id="rect"><button>BackSpace</button></td>
+            <td colspan="2"><button>C</button></td>
+        </tr>
+        <tr class="number">
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td id="operator"><button>/</button></td>
+        </tr>
+        <tr class="number">
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td id="operator"><button>x</button></td>
+        </tr>
+        <tr class="number">
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td id="operator"><button>+</button></td>
+        </tr>
+        <tr class="number">
+            <td><button>=</button></td>
+            <td><button>0</button></td>
+            <td><button>.</button></td>
+            <td id="operator"><button>-</button></td>
+        </tr>
+    </table>
+    <button>1</button>
+
+    
+</body>
+</html>
